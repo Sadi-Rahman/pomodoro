@@ -9,5 +9,6 @@ WiP Pomodoro Clock.
 ## Planned Features
 - Task Manager
 - Background Music
+- Make Better Background (for both light and dark mode)
 
 
