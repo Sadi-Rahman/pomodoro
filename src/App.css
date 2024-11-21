@@ -1,0 +1,220 @@
+/* src/App.css */
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  margin: 0;
+  background: conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0),
+    conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0) calc(1 * 14px)
+      calc(3 * 14px),
+    conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0) calc(2 * 14px)
+      calc(1 * 14px),
+    conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0) calc(3 * 14px)
+      calc(4 * 14px),
+    conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0) calc(4 * 14px)
+      calc(2 * 14px),
+    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) 0 calc(4 * 14px),
+    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) calc(1 * 14px)
+      calc(2 * 14px),
+    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) calc(2 * 14px) 0,
+    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) calc(3 * 14px)
+      calc(3 * 14px),
+    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) calc(4 * 14px)
+      calc(1 * 14px),
+    #dfffff;
+  background-size: 70px 70px;
+
+  /*transition: background-color 0.2s ease-in-out;
+  background: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);*/
+}
+
+body.dark-mode {
+  background: conic-gradient(at 10% 50%, #0000 75%, #212121 0),
+    conic-gradient(at 10% 50%, #0000 75%, #212121 0) calc(1 * 14px)
+      calc(3 * 14px),
+    conic-gradient(at 10% 50%, #0000 75%, #212121 0) calc(2 * 14px)
+      calc(1 * 14px),
+    conic-gradient(at 10% 50%, #0000 75%, #212121 0) calc(3 * 14px)
+      calc(4 * 14px),
+    conic-gradient(at 10% 50%, #0000 75%, #212121 0) calc(4 * 14px)
+      calc(2 * 14px),
+    conic-gradient(at 50% 10%, #0000 75%, #212121 0) 0 calc(4 * 14px),
+    conic-gradient(at 50% 10%, #0000 75%, #212121 0) calc(1 * 14px)
+      calc(2 * 14px),
+    conic-gradient(at 50% 10%, #0000 75%, #212121 0) calc(2 * 14px) 0,
+    conic-gradient(at 50% 10%, #0000 75%, #212121 0) calc(3 * 14px)
+      calc(3 * 14px),
+    conic-gradient(at 50% 10%, #0000 75%, #212121 0) calc(4 * 14px)
+      calc(1 * 14px),
+    #191919;
+  background-size: 70px 70px;
+
+  /* background-image: none; */
+  /* background-color: #333; */
+}
+
+.app {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pomodoro-clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fafeff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+body.dark-mode .pomodoro-clock {
+  background-color: #444;
+  color: #fff;
+}
+
+.time-display {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.start-stop-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.start-stop-button.start {
+  background-color: #4caf50;
+}
+
+.start-stop-button.stop {
+  background-color: #e74c3c;
+}
+
+.start-stop-button:hover {
+  opacity: 0.8;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.dark-mode-toggle svg {
+  font-size: 24px;
+}
+
+/* 
+/* 
+
+ */
+
+.duration-buttons {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.duration-buttons button {
+  margin-right: 5px;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.duration-buttons button:hover {
+  background-color: #3e8e41;
+}
+
+.duration-buttons button input[type="number"] {
+  width: 30px;
+  height: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.control-buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.control-buttons button:hover {
+  background-color: #3e8e41;
+}
+
+.start-stop-button {
+  background-color: #4caf50;
+}
+
+.start-stop-button.stop {
+  background-color: #e74c3c;
+}
+
+.pause-resume-button {
+  background-color: #f1c40f;
+}
+
+.pause-resume-button.pause {
+  background-color: #2ecc71;
+}
+
+.reset-button {
+  background-color: #e74c3c;
+}
+
+.dark-mode .pomodoro-clock {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .time-display {
+  color: #fff;
+}
+
+.dark-mode .duration-buttons button {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-mode .control-buttons button {
+  background-color: #555;
+  color: #fff;
+}
