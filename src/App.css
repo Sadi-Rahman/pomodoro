@@ -1,55 +1,22 @@
 /* src/App.css */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   margin: 0;
-  background: conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0),
-    conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0) calc(1 * 14px)
-      calc(3 * 14px),
-    conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0) calc(2 * 14px)
-      calc(1 * 14px),
-    conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0) calc(3 * 14px)
-      calc(4 * 14px),
-    conic-gradient(at 10% 50%, #0000 75%, #c1c3ff 0) calc(4 * 14px)
-      calc(2 * 14px),
-    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) 0 calc(4 * 14px),
-    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) calc(1 * 14px)
-      calc(2 * 14px),
-    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) calc(2 * 14px) 0,
-    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) calc(3 * 14px)
-      calc(3 * 14px),
-    conic-gradient(at 50% 10%, #0000 75%, #c1c3ff 0) calc(4 * 14px)
-      calc(1 * 14px),
-    #dfffff;
-  background-size: 70px 70px;
-
-  /*transition: background-color 0.2s ease-in-out;
-  background: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);*/
 }
 
 body.dark-mode {
-  background: conic-gradient(at 10% 50%, #0000 75%, #212121 0),
-    conic-gradient(at 10% 50%, #0000 75%, #212121 0) calc(1 * 14px)
-      calc(3 * 14px),
-    conic-gradient(at 10% 50%, #0000 75%, #212121 0) calc(2 * 14px)
-      calc(1 * 14px),
-    conic-gradient(at 10% 50%, #0000 75%, #212121 0) calc(3 * 14px)
-      calc(4 * 14px),
-    conic-gradient(at 10% 50%, #0000 75%, #212121 0) calc(4 * 14px)
-      calc(2 * 14px),
-    conic-gradient(at 50% 10%, #0000 75%, #212121 0) 0 calc(4 * 14px),
-    conic-gradient(at 50% 10%, #0000 75%, #212121 0) calc(1 * 14px)
-      calc(2 * 14px),
-    conic-gradient(at 50% 10%, #0000 75%, #212121 0) calc(2 * 14px) 0,
-    conic-gradient(at 50% 10%, #0000 75%, #212121 0) calc(3 * 14px)
-      calc(3 * 14px),
-    conic-gradient(at 50% 10%, #0000 75%, #212121 0) calc(4 * 14px)
-      calc(1 * 14px),
-    #191919;
-  background-size: 70px 70px;
-
-  /* background-image: none; */
-  /* background-color: #333; */
+  font-family: Arial, sans-serif;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .app {
@@ -80,9 +47,9 @@ body.dark-mode .pomodoro-clock {
 }
 
 .time-display {
-  font-size: 48px;
+  font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .start-stop-button {
@@ -121,11 +88,6 @@ body.dark-mode .pomodoro-clock {
   font-size: 24px;
 }
 
-/* 
-/* 
-
- */
-
 .duration-buttons {
   margin-bottom: 5px;
   display: flex;
@@ -135,28 +97,30 @@ body.dark-mode .pomodoro-clock {
 
 .duration-buttons button {
   margin-right: 5px;
-  padding: 5px 5px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #4caf50;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  width: 100px;
+  text-align: center;
 }
 
 .duration-buttons button:hover {
   background-color: #3e8e41;
 }
 
-.duration-buttons button input[type="number"] {
-  width: 30px;
-  height: 10px;
+/* .duration-buttons button input[type="number"] {
+  width: 40px;
+  height: 20px;
   margin-left: 10px;
-  padding: 10px;
+  padding: 20px;
   border: none;
   border-radius: 5px;
   background-color: #f0f0f0;
-}
+} */
 
 .control-buttons {
   margin-top: 20px;
@@ -166,14 +130,16 @@ body.dark-mode .pomodoro-clock {
 }
 
 .control-buttons button {
-  margin-right: 10px;
-  padding: 10px 20px;
+  margin-right: 5px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #4caf50;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  width: 100px;
+  text-align: center;
 }
 
 .control-buttons button:hover {
